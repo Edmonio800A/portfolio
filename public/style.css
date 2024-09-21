@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Protest+Guerrilla&family=Roboto+Slab:wght@100..900&family=Sofadi+One&display=swap');
+@keyframes bdAnim {
+    0% {
+        border-color: yellow;
+        color: yellow;
+        transform: rotateZ(-360deg);
+    }
+    30% {
+        border-color: red;
+        color: red;
+    }
+    60% {
+        border-color:  blue;
+        color:  blue;
+    }
+    90% {
+        border-color: green;
+        color: green;
+    }
+    100% {
+        border-color: gold;
+        color: gold;
+    }
+}
+
+
+@keyframes showNav {
+    0% {
+        width: 0;
+        font-size: 0%;
+    }
+    100% {
+        width: 250px;
+        font-size: 16px;
+    }
+
+}
+  /*font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
+    .protest-guerrilla-regular {
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .roboto-slab-uniquifier {
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+  
+    background-image: url(https://img.freepik.com/free-vector/digital-red-circuit-lines-technology-background-design_1017-27263.jpg);
+    background-size: cover;
+    font-family: "JetBrains Mono", monospace;
+}
+header {
+    display: flex;
+    
+}
+#btn-leftBar {
+    width: 45px;
+    height: 45px;
+    border: 3px solid gold;
+    border-radius: 15px;
+    
+    margin: 10px;
+    background-color: black;
+    color: whitesmoke;
+}
+#btn-leftBar:hover {
+    background-color: gold;
+    color: darkslategrey;
+    border: 3px ridge black;
+    box-shadow: 5px 5px 5px goldenrod;
+}
+.text-main {
+    color: white;
+    margin-left: 30px;
+}
+.title-header {
+    color: gold;
+    font-size: 30px;
+    font-weight: 100px;
+    margin-top: 10px;
+    margin-left: 60px;
+    animation: bdAnim 8s infinite;
+}
+
+.nameProfile {
+    font-size: 55px;
+    margin: 35px;
+    color:yellow;
+    font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+}
+.navBar-left {
+    width: 250px;
+    height: 500px;
+    background-color: gold;
+    color: black;
+    border-radius: 0px 20px 0px 20px;
+    position: absolute;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 10px 10px 0px 5px rgb(218, 144, 7);
+}
+#navBar {
+    display: none;
+}
+.link-nav {
+    width: 250px;
+    height: 35px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    font-style: normal;
+    color: Black;
+    margin-top: 25px;
+    background-color: gold;
+    border: 2px solid whitesmoke;
+   
+}
+.link-nav:hover {
+    width: 270px;
+    height: 38px;
+    background:linear-gradient(gold,goldenrod);
+    color: black;
+   box-shadow: 5px 5px 5px 0px black;
+    border-radius: 0px 18px 18px 0px;
+}
+#title-headerId {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: "JetBrains Mono", monospace;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+.link-header {
+    margin-left: 10%;
+    margin-top: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.link-header:hover {
+    color: gold;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px silver ;
+}
+.box-home {
+    border-top: 1px solid gold;
+    border-left: 10px solid gold;
+    margin: 5%;
+}
+.presentation {
+    color: gold;
+    margin-left: 200px;
+}
+.img-profile {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    margin-left: 55%;
+    margin-top: 5%;
+    position: absolute;
+    border: 3px solid orangered;
+    animation: bdAnim 8s infinite;
+
+}
+#video1 {
+    width: 600px;
+    height: 440px;
+    border-radius: 25px;
+    
+    
+}
+#videos-arts-box {
+    width: 100%;
+    height: 100%;
+    margin-left: 15%;
+    position: absolute;
+    display: none;
+}
+.skills {
+    width: 600px;
+    height: 440px;
+    border: 3px solid whitesmoke;
+    margin-left: 33%;
+    margin-top: 10%;
+    position: absolute;
+    background-color: rgb(207, 176, 0);
+    box-shadow: 10px 10px 0px 5px rgb(218, 144, 7);
+}
+.boxes {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+#skills-boxId {
+    display: none;
+}
+/*
+PERCENT EACH SKILL
+*/
+.html {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.perc-html {
+    width: 100%;
+    height: 30px;
+    background-color: green;
+}
+.js {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.perc-js {
+    width: 95%;
+    height: 100%;
+    background-color: green;
+}
+.css {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.perc-css {
+    width: 95%;
+    height: 100%;
+    background-color: green;
+}
+.perc-java {
+    width: 85%;
+    height: 100%;
+    background-color: green;
+}
+.java{
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.perc-cleng {
+    width: 75%;
+    height: 100%;
+    background-color: green;
+}
+.cLeng {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.perc-php {
+    width: 80%;
+    height: 100%;
+    background-color: green;
+}
+.php {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.services {
+    width: 300px;
+    height: 500px;
+    border: 3px solid whitesmoke;
+    background-color: rgb(207, 176, 0);
+    margin-left: 43%;
+    position: absolute;
+    box-shadow: 10px 10px 0px 5px rgb(218, 144, 7);
+}
+#ul-services {
+    color: whitesmoke;
+    list-style: none;
+    font-size: 22px;
+}
+.li-services {
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.li-services:hover {
+    color: black;
+}
+#servicesId {
+    display: none;
+}
+#send-mail {
+    margin: 10%;
+}
+.input-home {
+    width: 300px;
+    height: 45px;
+    border: 3px solid white;
+}
+.input-home-btn {
+    width: 30px;
+    height: 45px;
+    background-color: gold;
+    border: goldenrod solid #000;
+}
+
+@media only screen and (max-width: 320px) {
+    .navBar-left {
+        width: 80%;
+        height: 100%;
+    }
+    .skills {
+        margin: 0;
+        width: 100%;
+    }
+    .html {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        border: 1px solid white;
+        color: white;
+    }
+    .perc-html {
+        width: 100%;
+        height: 30px;
+        background-color: green;
+    }
+    .services {
+        margin: 0;
+    }
+    .js {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        border: 1px solid white;
+        color: white;
+    }
+    .perc-js {
+        width: 95%;
+        height: 100%;
+        background-color: green;
+    }
+    .css {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        border: 1px solid white;
+        color: white;
+    }
+    .perc-css {
+        width: 95%;
+        height: 100%;
+        background-color: green;
+    }
+    .perc-java {
+        width: 85%;
+        height: 100%;
+        background-color: green;
+    }
+    .java{
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        border: 1px solid white;
+        color: white;
+    }
+    .perc-cleng {
+        width: 75%;
+        height: 100%;
+        background-color: green;
+    }
+    .cLeng {
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        border: 1px solid white;
+        color: white;
+    }
+    .perc-php {
+        width: 80%;
+        height: 100%;
+        background-color: green;
+    }
+    .php {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid white;
+        color: white;
+    }
+    .title-header {
+        color: gold;
+        font-size: 18px;
+        font-weight: 100px;
+        margin-top: 10px;
+    }
+    #title-headerId {
+        color: whitesmoke;
+        font-size: 12px;
+        margin-left: 20px;
+        font-family: "JetBrains Mono", monospace;
+        font-style: normal;
+        font-optical-sizing: auto;
+    }
+    #btn-leftBar {
+        width: 35px;
+        height: 35px;
+        border: 2px solid gold;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: black;
+        color: whitesmoke;
+    }
+    .link-header {
+        font-weight: bold;
+        margin-top: 10px;
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    body, html {
+        width: 100%;
+        height: 100%;
+         background-image: url(https://img.freepik.com/free-vector/digital-red-circuit-lines-technology-background-design_1017-27263.jpg);
+        background-size: 320px 480px;
+        background-repeat: no-repeat;
+        background-color: rgb(1, 2, 24);
+        font-family: "JetBrains Mono", monospace;
+    }
+    .presentation {
+        margin: 4%;
+        font-size: 12px;
+    }
+    .img-profile {
+        border-radius: 50%;
+       margin-left: 0;
+        margin-top: 5%;
+        position: absolute;
+        border: 3px solid orangered;
+    }
+    #img-profile {
+        width:80px;
+        height: 80px;
+        margin-left: 50%;
+        margin-top: 30px;
+        
+    }
+    .nameProfile {
+        margin-top: 100px;
+    }
+    header {
+    display: block;
+    }
+    .input-home {
+        width: 200px;
+    }
+    .input-home-btn {
+        width: 40px;
+    }
+    #send-mail {
+        display: flex;
+    }
+    #title-headerId {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-height: 480px) {
+    body, html {
+        width: 100%;
+        height: 100%;
+         background-image: url(https://img.freepik.com/free-vector/digital-red-circuit-lines-technology-background-design_1017-27263.jpg);
+        background-size: cover;
+        font-family: "JetBrains Mono", monospace;
+    }
+  
+}
