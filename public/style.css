@@ -89,6 +89,12 @@ header {
 .text-main {
     color: white;
     margin-left: 30px;
+    
+}
+.text-main2 {
+    color: white;
+    margin-left: 30px;
+    background: linear-gradient(orange,goldenrod,gold);
 }
 .title-header {
     color: gold;
@@ -126,15 +132,43 @@ header {
 .link-nav {
     width: 250px;
     height: 35px;
-    font-family: "Protest Guerrilla", sans-serif;
     font-weight: bold;
-    font-size: 22px;
-    font-style: normal;
+    font-size: 18px;
     color: Black;
     margin-top: 25px;
     background-color: gold;
     border: 2px solid whitesmoke;
    
+}
+.contactme {
+    width: 300px;
+    height: 500px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-left: 33%;
+    margin-top: 10%;
+    background-color: gold;
+    box-shadow: 10px 10px 0px 5px rgb(218, 144, 7);
+    position: absolute;
+}
+#contactmeId {
+    display: none;
+}
+#form-contactme {
+    margin: 15%;
+}
+#input-textarea {
+    margin-top: 15px;
+}
+.input-contact {
+    width: 200px;
+    height: 35px;
+    margin-top: 15px;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+}
+#btn-contactme:hover {
+    background-color: goldenrod;
 }
 .link-nav:hover {
     width: 270px;
@@ -199,10 +233,10 @@ header {
 }
 .skills {
     width: 600px;
-    height: 440px;
+    height: 540px;
     border: 3px solid whitesmoke;
     margin-left: 33%;
-    margin-top: 10%;
+    margin-top: 7%;
     position: absolute;
     background-color: rgb(207, 176, 0);
     box-shadow: 10px 10px 0px 5px rgb(218, 144, 7);
@@ -289,6 +323,30 @@ PERCENT EACH SKILL
     border: 1px solid white;
     color: white;
 }
+.Gihub-Shell-Bash {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.perc-git {
+    width: 80%;
+    height: 100%;
+    background-color: green;
+}
+.unix-leng {
+    width: 500px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid white;
+    color: white;
+}
+.perc-unix {
+    width: 85%;
+    height: 100%;
+    background-color: green;
+}
 .services {
     width: 300px;
     height: 500px;
@@ -326,6 +384,45 @@ PERCENT EACH SKILL
     height: 45px;
     background-color: gold;
     border: goldenrod solid #000;
+}
+.about-box {
+    width: 800px;
+    height: 680px;
+    border: 3px solid whitesmoke;
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+    margin-left: 30%;
+    position: absolute;
+    box-shadow: 10px 10px 0px 5px rgb(218, 144, 7);
+}
+.img-about {
+    width: 300px;
+    height: 300px;
+    margin-left: 27%;
+    margin-top: 25px;
+    border-radius: 20px;
+    background-image: url(./assets/img/IMG_20240914_185838.jpg);
+    background-size: cover;
+    border: 3px solid goldenrod;
+    z-index: 1;
+}
+#aboutId {
+    display: none;
+}
+.projects {
+    width: auto;
+    height: auto;
+    border: 3px solid whitesmoke;
+    background-color: gold;
+    color: black;
+    border-radius: 10px;
+    margin-left: 30%;
+    position: absolute;
+    box-shadow: 10px 10px 0px 5px rgb(218, 144, 7);
+}
+#projectsId {
+    display: none;
 }
 
 @media only screen and (max-width: 320px) {
@@ -486,6 +583,13 @@ PERCENT EACH SKILL
     #title-headerId {
         margin-left: 0;
     }
+    .contactme {
+        
+        width: 100%;
+        height: 500px;
+        margin-left: 0;
+    }
+    
 }
 @media only screen and (max-height: 480px) {
     body, html {

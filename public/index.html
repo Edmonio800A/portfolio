@@ -14,7 +14,7 @@
     <button id="btn-leftBar">Start</button>
     <a href="./index.html" id="title-headerId"><span class="title-header">Port/</span>folio</a>
     <a class="link-header" href="./index.html">Home</a>
-    <a href="#" class="link-header">About us</a>
+    <a href="#" class="link-header" id="btn-aboutId">About us</a>
     <a href="#" class="link-header" id="btn-servicesId">Services</a>
     <a href="#" class="link-header" id="link-skillsId">Skills</a>
   </header>
@@ -30,26 +30,57 @@
       <button id="btn-nav6" class="link-nav">Wath else?</button>
       <button id="btn-nav7" class="link-nav">Undefined</button>
     </div>
+  </div>
+  <!--CONTACT ME-->
+  <div class="contactme" id="contactmeId">
+    <h1 id="text-main" style="text-align: center;">CONTACT ME</h1>
+    <p id="text-main">Consulting, Previous, share works <br> Leave your contact so i can find you, thanks</p>
+    <form action="/api/form-contactme" id="form-contactme" method="POST">
 
-
+      <input class="input-contact" type="text" id="username" name="username" placeholder="username here">
+      <textarea cols="24" rows="12" id="input-textarea" name="message"
+        style="border-radius: 10px; margin-left: 5px; padding: 5px;"></textarea>
+      <input type="submit" class="input-contact" value="Send">
+    </form>
   </div>
   <!--MAIN PAGE-->
   <main>
-    <div class="videos-arts" id="videos-arts-box">
-      <video id="video1" src="./assets/Video/Art_studio.mp4" loop autoplay></video>
+    <!--PROJECTS-->
+    <div class="projects" id="projectsId">
+      <div class="website1">
+        <h3 class="text-main2">Web Site ART_Lab 1.0 by Edmondo Piazza</h3>
+        <video id="video1" src="./assets/Video/Art_studio.mp4" loop autoplay></video>
+      </div>
+      <div class="website1">
+        <h3 class="text-main2">Web Site ART_Lab 1.0 by Edmondo Piazza</h3>
+        <video id="video1" src="./assets/Video/Art_studio.mp4" loop autoplay></video>
+      </div>
     </div>
-     <!--SERVICES-->
- <div class="services" id="servicesId">
-  <ul id="ul-services">
-    <li class="li-services">($) Web consulting</li>
-    <li class="li-services">($) Web developing</li>
-    <li class="li-services">($) Web designing</li>
-    <li class="li-services">($) Arts Teacher</li>
-    <li class="li-services">($) Collaborating</li>
-    <li class="li-services">($) Hardware & Gaming</li>
+    <!--ARTS PROJECTS-->
+    <div class="videos-arts" id="videos-arts-box">
+      
+    </div>
 
-  </ul>
- </div>
+    <!--SERVICES-->
+    <div class="services" id="servicesId">
+      <ul id="ul-services">
+        <li class="li-services">($) Web consulting</li>
+        <li class="li-services">($) Web developing</li>
+        <li class="li-services">($) Web designing</li>
+        <li class="li-services">($) Arts Teacher</li>
+        <li class="li-services">($) Collaborating</li>
+        <li class="li-services">($) Hardware & Gaming</li>
+
+      </ul>
+    </div>
+    <!--ABOUT-->
+    <div class="about-box" id="aboutId">
+      <div class="img-about">
+        
+      </div>
+      <h2 style="margin: 50px; font-size: 20px;">My Name is Edmondo Piazza I'm an Web Software Developer FullStack, I'm Italian but I was been to many sites in the world.
+        <br> It's a pleasure have you here now, I hope you find wath you looking for <br> In my Site you can find many content of your intrests <br> such as Paint Arts, Web Design, Digital Arts, Web Developing and else yet <br> Contact me if you are intrested on some product or service would you like to have</h2>
+    </div>
     <!--SKILLS-->
     <div class="skills" id="skills-boxId">
       <h1 style="text-align: center;">MY SKILLS <br>How Developer </h1>
@@ -72,7 +103,12 @@
         <div class="java">
           <div class="perc-java">JAVA: 85%</div>
         </div>
-
+        <div class="Gihub-Shell-Bash">
+          <div class="perc-git">GUTHUB SHELL-BASH: 80%</div>
+        </div>
+        <div class="unix-leng">
+          <div class="perc-unix">UNIX SHELL-BASH: 85%</div>
+        </div>
       </div>
 
 
@@ -83,8 +119,9 @@
       <h1 class="text-main">I'm </h1>
       <h1 class="nameProfile">EDMONDO PIAZZA</h1>
       <p class="text-main">Web developer FullStack, Painter Artist</p>
+      <p class="text-main">Leave your email if you want I contact you</p>
       <form action="/mailbox" id="send-mail">
-        <input type="text" class="input-home" placeholder="send your mail">
+        <input type="text" class="input-home" placeholder="cerca nel sito">
         <input type="submit" class="input-home-btn" value="Go!">
       </form>
     </div>
@@ -94,7 +131,7 @@
       <h1>It's a pleasure for me show you my own Web Site</h1>
       <p>this is my way how to show my own works <br> thank you to watch it!</p>
     </div>
-   
+
 
   </main>
   <script src="./index.js"></script>

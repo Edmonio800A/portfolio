@@ -30,8 +30,8 @@ document.getElementById('btn-leftBar').addEventListener('click', function() {
     }
 });
 
-document.getElementById('btn-nav4').addEventListener('click', function() {
-    let video1 = document.getElementById('videos-arts-box');
+document.getElementById('btn-nav1').addEventListener('click', function() {
+    let video1 = document.getElementById('projectsId');
     let img = document.getElementById('img-profile');
     
     if(video1.style.display == "none") {
@@ -62,5 +62,57 @@ document.getElementById('btn-servicesId').addEventListener('click', function() {
         services.style.display = "block";
     }else {
         services.style.display = "none";
+    }
+});
+
+document.getElementById('btn-nav2').addEventListener('click', function() {
+    let contBox = document.getElementById('contactmeId');
+    if(contBox.style.display == "none") {
+        contBox.style.display = "block";
+    }else {
+        contBox.style.display = "none";
+    }
+});
+
+
+const form = document.getElementById('form-contactme');
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Previene il ricaricamento della pagina
+
+  const data = {
+    username: document.getElementById('username').value,
+    comment: document.getElementById('input-textarea').value,
+  };
+
+  fetch('/api/form-contactme', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json', // Indica che il corpo è in formato JSON
+    },
+    body: JSON.stringify(data), // Converte l'oggetto data in JSON
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`Errore: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    console.log('Success:', data);
+    // Fai un redirect o gestisci la risposta come desideri
+  })
+  .catch(error => {
+    console.error('Errore:', error);
+  });
+});
+
+document.getElementById('btn-aboutId').addEventListener('click', function() {
+    let about = document.getElementById('aboutId');
+    let img = document.getElementById('img-profile');
+    if(about.style.display == "none") {
+        img.style.display = "none";
+        about.style.display = "block";
+    }else {
+        about.style.display = "none";
     }
 });
